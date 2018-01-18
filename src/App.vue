@@ -17,9 +17,27 @@
         <a :href="project.url" target="_blank" class="project">
           <div class="project-thumbnail">
             <picture>
-              <source :srcset="`/static/screenshots/${project.thumb}.webp`" type="image/webp">
-              <source :srcset="`/static/screenshots/${project.thumb}.png`" type="image/png">
-              <img :src="`/static/screenshots/${project.thumb}.png`" :alt="project.name">
+              <source
+                :srcset="`/static/screenshots/desktop/${project.thumb}.webp`"
+                type="image/webp"
+                media="(min-width: 768px)"
+              >
+              <source
+                :srcset="`/static/screenshots/mobile/${project.thumb}.webp`"
+                type="image/webp"
+                media="(max-width: 767px)"
+              >
+              <source
+                :srcset="`/static/screenshots/desktop/${project.thumb}.png`"
+                type="image/png"
+                media="(min-width: 768px)"
+              >
+              <source
+                :srcset="`/static/screenshots/mobile/${project.thumb}.png`"
+                type="image/png"
+                media="(max-width: 767px)"
+              >
+              <img :src="`/static/screenshots/desktop/${project.thumb}.png`" :alt="project.name">
             </picture>
           </div>
           <div class="project-body">
