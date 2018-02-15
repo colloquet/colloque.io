@@ -91,11 +91,11 @@ export default {
           thumb: 'sterling-apparel',
           url: 'http://www.sterlingapparel.com.hk/',
         },
-        {
-          name: 'Eqibeat',
-          thumb: 'eqibeat',
-          url: 'http://eqibeat.com/',
-        },
+        // {
+        //   name: 'Eqibeat',
+        //   thumb: 'eqibeat',
+        //   url: 'http://eqibeat.com/',
+        // },
         {
           name: 'BasicLaw.hk',
           thumb: 'basiclaw',
