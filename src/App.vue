@@ -18,26 +18,26 @@
           <div class="project-thumbnail">
             <picture>
               <source
-                :srcset="`/static/screenshots/desktop/${project.thumb}.webp`"
+                :srcset="`${project.desktop}.webp`"
                 type="image/webp"
                 media="(min-width: 768px)"
               >
               <source
-                :srcset="`/static/screenshots/mobile/${project.thumb}.webp`"
+                :srcset="`${project.mobile}.webp`"
                 type="image/webp"
                 media="(max-width: 767px)"
               >
               <source
-                :srcset="`/static/screenshots/desktop/${project.thumb}.png`"
+                :srcset="`${project.desktop}.png`"
                 type="image/png"
                 media="(min-width: 768px)"
               >
               <source
-                :srcset="`/static/screenshots/mobile/${project.thumb}.png`"
+                :srcset="`${project.mobile}.png`"
                 type="image/png"
                 media="(max-width: 767px)"
               >
-              <img :src="`/static/screenshots/desktop/${project.thumb}.png`" :alt="project.name">
+              <img :src="`${project.desktop}.png`" :alt="project.name">
             </picture>
           </div>
           <div class="project-body">
@@ -77,40 +77,29 @@ export default {
       projects: [
         {
           name: 'LIHKG (Vue)',
-          thumb: 'lihkg-vue',
+          desktop: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/v1518971760/lihkg-vue_kgecjy',
+          mobile: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/c_scale,w_600/v1518971760/lihkg-vue_kgecjy',
           url: 'https://lihkg.colloque.io',
           featured: true,
         },
         {
           name: 'iReserve Monitor',
-          thumb: 'ireserve-monitor',
+          desktop: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/v1518971760/ireserve-monitor_j8zhbd',
+          mobile: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/c_scale,w_600/v1518971760/ireserve-monitor_j8zhbd',
           url: 'https://ireserve.me/',
         },
         {
           name: 'Sterling Apparel',
-          thumb: 'sterling-apparel',
+          desktop: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/v1518971762/sterling-apparel_ndhrxe',
+          mobile: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/c_scale,w_600/v1518971762/sterling-apparel_ndhrxe',
           url: 'http://www.sterlingapparel.com.hk/',
         },
-        // {
-        //   name: 'Eqibeat',
-        //   thumb: 'eqibeat',
-        //   url: 'http://eqibeat.com/',
-        // },
         {
           name: 'BasicLaw.hk',
-          thumb: 'basiclaw',
+          desktop: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/v1518971760/basiclaw_ldefc4',
+          mobile: 'http://res.cloudinary.com/dfcdxc2e8/image/upload/c_scale,w_600/v1518971760/basiclaw_ldefc4',
           url: 'https://basiclaw.hk/',
         },
-        // {
-        //   name: 'onActivity',
-        //   thumb: 'onactivity',
-        //   url: 'http://onactivity.com/',
-        // },
-        // {
-        //   name: 'Cooltech Global',
-        //   thumb: 'cooltech-global',
-        //   url: 'http://www.cooltechglobal.com/',
-        // },
       ],
     };
   },
