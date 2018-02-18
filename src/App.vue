@@ -101,16 +101,16 @@ export default {
           thumb: 'basiclaw',
           url: 'https://basiclaw.hk/',
         },
-        {
-          name: 'onActivity',
-          thumb: 'onactivity',
-          url: 'http://onactivity.com/',
-        },
-        {
-          name: 'Cooltech Global',
-          thumb: 'cooltech-global',
-          url: 'http://www.cooltechglobal.com/',
-        },
+        // {
+        //   name: 'onActivity',
+        //   thumb: 'onactivity',
+        //   url: 'http://onactivity.com/',
+        // },
+        // {
+        //   name: 'Cooltech Global',
+        //   thumb: 'cooltech-global',
+        //   url: 'http://www.cooltechglobal.com/',
+        // },
       ],
     };
   },
